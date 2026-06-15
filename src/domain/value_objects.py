@@ -1,5 +1,5 @@
 """
-Доменные Value Objects.
+Доменные важные значения.
 """
 from dataclasses import dataclass
 import re
