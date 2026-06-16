@@ -7,3 +7,7 @@ class XMLParseError(Exception):
 
 class XMLComposeError(Exception):
     pass
+
+
+class LLMCallError(Exception):
+    pass
