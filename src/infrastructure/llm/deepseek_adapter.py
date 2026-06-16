@@ -13,4 +13,8 @@ from src.domain.exceptions import LLMCallError
 logger = logging.getLogger(__name__)
 
 
-class DeepSeekAdapter(LLMTranslator)
+class DeepSeekAdapter(LLMTranslator):
+    """
+    Клиент для DeepSeek через Ollama API.
+    """
+    
