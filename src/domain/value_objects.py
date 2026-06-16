@@ -55,8 +55,6 @@ class TranslationPair:
     def __post_init__(self):
         if not self.original or not self.original.strip():
             raise ValueError("Original value cannot be empty")
-        if not self.translated or not self.translated.strip():
-            raise ValueError("Translated value cannot be empty")
 
     def __str__(self) -> str:
         return f"'{self.original}' -> '{self.translated}'"
