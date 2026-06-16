@@ -51,7 +51,13 @@ class TranslationPair:
     translated: str
     xpath: XPath
 
-    
+
+    def is_translated(self) -> bool:
+        """
+        Переведен ли текст.
+        """
+        return bool(self.translated and self.translated.strip())
+
     def __post_init__(self):
         if not self.original or not self.original.strip():
             raise ValueError("Original value cannot be empty")
