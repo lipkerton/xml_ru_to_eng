@@ -4,7 +4,7 @@
 import logging
 from typing import List
 
-from lxml import etree
+from lxml import etree # pyright: ignore[reportAttributeAccessIssue]
 
 from src.domain.entities import XMLDocument
 from src.domain.value_objects import TranslationPair, XPath
